@@ -1,0 +1,20 @@
+import Image from "next/image";
+import Logo2 from "../img/LOGO2.png";
+
+const Logo = (props: any) => {
+  const { renderDefault, title } = props;
+  return (
+    <div>
+      <Image
+        className=" object-cover"
+        height={40}
+        width={40}
+        src={Logo2}
+        alt="logo"
+      />
+      <>{renderDefault(props)}</>
+    </div>
+  );
+};
+
+export default Logo;
