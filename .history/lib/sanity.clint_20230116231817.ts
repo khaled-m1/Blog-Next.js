@@ -1,0 +1,5 @@
+import { createClient } from "next-sanity";
+
+NEXT_PUBLIC_SANITY_PROJECT_ID
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2023-1-10
