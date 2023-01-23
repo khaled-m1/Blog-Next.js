@@ -23,7 +23,9 @@ export const getDefaultDocumentNode: DefaultDocumentNodeResolver = (
           },
           // Optional: Pass attributes to the underlying `iframe` element:
           // See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
-          attributes: {},
+          attributes: {
+
+          },
         })
         .title("Preview"),
     ]);

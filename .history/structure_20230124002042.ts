@@ -20,10 +20,15 @@ export const getDefaultDocumentNode: DefaultDocumentNodeResolver = (
           // Optional: Add a reload button, or reload on new document revisions
           reload: {
             button: true, // default `undefined`
+
           },
           // Optional: Pass attributes to the underlying `iframe` element:
           // See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
-          attributes: {},
+          attributes: {
+            allow: "fullscreen", // string, optional
+            referrerPolicy: "strict-origin-when-cross-origin", // string, optional
+            sandbox: "allow-same-origin", // string, optional
+          },
         })
         .title("Preview"),
     ]);
