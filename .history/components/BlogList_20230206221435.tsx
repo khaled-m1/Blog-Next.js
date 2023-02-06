@@ -19,7 +19,7 @@ function BlogList({ posts }: Props) {
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
-            <div  className="fles flex-col group cursor-pointer">
+            <div key={post._id}  className="fles flex-col group cursor-pointer">
               <div
                 className="relative w-full h-80 drop-shadow-xl
             group-hover:scale-105 transition-transform duration-200 ease-out"

@@ -16,7 +16,7 @@ type Props = {
     slug: string;
   };
 };
-export const revalidate = 60; // revalidate this page every 60 seconds
+export const revalidate = 60; // revalidate this page every 60 secon
 export async function generateStaticParams() {
   const query = groq`*[_type=='post'] 
   {
