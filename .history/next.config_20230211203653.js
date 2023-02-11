@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  targert: "static",
-  ssr: false,
-  generate: {
-    fallback: true,
-  },
   reactStrictMode: true,
   experimental: {
     appDir: true,
@@ -17,6 +12,9 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  targert: "static",
+  ssr: false,
+  generate
 };
 
 module.exports = nextConfig;
